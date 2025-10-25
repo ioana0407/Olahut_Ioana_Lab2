@@ -18,6 +18,8 @@ namespace Olahut_Ioana_Lab2.Models
         public DateTime PublishingDate { get; set; }
 
         public int? PublisherID { get; set; }   
-        public Publisher? Publisher { get; set; } 
+        public Publisher? Publisher { get; set; }
+        [Display(Name = "Categories")]  
+        public ICollection<BookCategory>? BookCategories { get; set; }
     }
 }
