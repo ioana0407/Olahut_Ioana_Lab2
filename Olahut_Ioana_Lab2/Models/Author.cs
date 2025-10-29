@@ -14,5 +14,6 @@ namespace Olahut_Ioana_Lab2.Models
         {
             get { return FirstName + " " + LastName; }
         }
+        public ICollection<Book>? Books { get; set; }   
     }
 }
