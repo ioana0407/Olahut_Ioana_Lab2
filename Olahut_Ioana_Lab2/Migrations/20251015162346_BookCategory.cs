@@ -39,7 +39,7 @@ namespace Olahut_Ioana_Lab2.Migrations
                         name: "FK_BookCategory_Book_BookID",
                         column: x => x.BookID,
                         principalTable: "Book",
-                        principalColumn: "Id",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_BookCategory_Category_CategoryID",

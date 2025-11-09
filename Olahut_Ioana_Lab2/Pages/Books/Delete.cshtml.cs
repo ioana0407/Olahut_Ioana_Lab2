@@ -34,7 +34,7 @@ namespace Olahut_Ioana_Lab2.Pages.Books
                 .Include(b=>b.Publisher)    
                 .Include(b=>b.BookCategories)
                    .ThenInclude(b=>b.Category)  
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
 
             if (book == null)
             {

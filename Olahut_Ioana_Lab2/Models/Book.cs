@@ -5,7 +5,7 @@ namespace Olahut_Ioana_Lab2.Models
 {
     public class Book
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         [Display(Name = "Book Title")]
         public string Title { get; set; }
         public int? AuthorID { get; set; }  
@@ -20,6 +20,8 @@ namespace Olahut_Ioana_Lab2.Models
         public int? PublisherID { get; set; }   
         public Publisher? Publisher { get; set; }
         [Display(Name = "Categories")]  
+
+        public ICollection<Borrowing>? Borrowings { get; set; } 
         public ICollection<BookCategory>? BookCategories { get; set; }
     }
 }

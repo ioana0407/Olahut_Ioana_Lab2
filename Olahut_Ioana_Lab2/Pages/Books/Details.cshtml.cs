@@ -34,7 +34,7 @@ namespace Olahut_Ioana_Lab2.Pages.Books
                 .Include(b => b.BookCategories)
                    .ThenInclude(b => b.Category)
                 .AsNoTracking()
-                .FirstOrDefaultAsync(m => m.Id == id);  
+                .FirstOrDefaultAsync(m => m.ID == id);  
             if (book == null)
             {
                 return NotFound();

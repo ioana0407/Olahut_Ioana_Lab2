@@ -43,7 +43,7 @@ namespace Olahut_Ioana_Lab2.Models
                         bookToUpdate.BookCategories.Add(
                         new BookCategory
                         {
-                            BookID = bookToUpdate.Id,
+                            BookID = bookToUpdate.ID,
                             CategoryID = cat.ID
                         });
                     }

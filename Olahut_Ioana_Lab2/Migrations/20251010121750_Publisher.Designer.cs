@@ -27,11 +27,11 @@ namespace Olahut_Ioana_Lab2.Migrations
 
             modelBuilder.Entity("Olahut_Ioana_Lab2.Models.Book", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Author")
                         .IsRequired()
@@ -50,7 +50,7 @@ namespace Olahut_Ioana_Lab2.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.HasIndex("PublisherID");
 
