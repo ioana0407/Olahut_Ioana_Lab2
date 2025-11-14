@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Olahut_Ioana_Lab2.Data;
 
@@ -11,9 +12,11 @@ using Olahut_Ioana_Lab2.Data;
 namespace Olahut_Ioana_Lab2.Migrations.LibraryIdentity
 {
     [DbContext(typeof(LibraryIdentityContext))]
-    partial class LibraryIdentityContextModelSnapshot : ModelSnapshot
+    [Migration("20251114131213_CreateIdentitySchema")]
+    partial class CreateIdentitySchema
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
